@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section */
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14%;
+    border-bottom: 1px solid rgb(242,242,242);
+    background-color: rgb(255,255,255);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo{
+    height:39px
+}
+
+header .logo img{
+    /* width: 20%;
+    height: 20%; */
+    height: 100%;
+    object-fit: contain;
+}
+header .logo img:hover{
+    cursor: pointer;
+}
+
+header .searchbar{
+    width: 229px;
+    padding: 5px 15px;
+    background-color: rgb(239,239,239);
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+
+header .searchbar input{
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 4px 4px;
+    background-color: rgb(239, 239, 239);
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    /* padding: 3px 3px; */
+}
+header nav ul li{
+    margin: 15px;
+}
+header nav ul li:last-child{
+    margin-right: 0;
+}
+
+header nav ul li a i{
+    font-size: 20px;
+    color: rgba(38,38,38,1);
+}
+
+/* Body section  */
+section{
+    background-color: rgb(250,250,250);
+    padding: 30px 14%;
+    display: flex;
+}
+
+.left{
+    width: 65%;
+    /* background-color: antiquewhite; */
+}
+
+.story{
+    display: flex;
+    padding: 22px;
+    border: 1px solid rgb(228,228,228);
+    border-radius: 13px;
+    background-color: white;
+
+}
+.story .stories{
+    width: 15%;
+    /* padding: 0px 7px; */
+}
+.story .stories a img{
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid #c62d8f;
+    object-fit: cover;
+}
+
+.story .stories p{
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #262626;
+}
+
+/* Posts */
+
+.posts .posttitle .image img{
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid #c62d8f;
+    object-fit: cover;
+}
+
+.posts .postcontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posts{
+    margin: 24px 0px;
+    border: 1px solid rgb(228,228,228);
+    border-radius: 13px;
+    /* padding: 22px; */
+    background-color: white;
+}
+
+.posts .posttitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+
+.posts .posttitle .postleft{
+    display: flex;
+    align-items: center;
+}
+.posts .posttitle .postleft img{
+    margin-right: 10px;
+    align-items: center;
+}
+
+.posts .posttitle .postleft .details{
+    padding: 4px 0px;
+    font-weight: bold;
+}
+
+.posts .postfooter{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.posts .postfooter .like{
+   margin-left: 7px;
+}
+.posts .postfooter i{
+    padding: 5px 8px;
+}
+.posts .postfootercontent{
+    padding: 0px 12px 16px 12px;
+}
+.posts .postfootercontent p{
+    margin-bottom: 3px;
+}
+.posts .postfootercontent .likes{
+    margin-bottom: 8px;
+}
+.posts .postfootercontent .names{
+   font-weight: bold;
+}
+.posts .postfootercontent .names{
+   font-weight: bold;
+}
+.posts .postfootercontent .names span{
+   font-weight: normal;
+   margin-left: 5px;
+}
+.posts .postfootercontent .comments{
+    margin-bottom: 3px;
+}
+.posts .postfootercontent .time{
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+.posts .addcomment{
+    padding: 16px;
+    border-top: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts .addcomment .leftsidecomment{
+    display: flex;
+    align-items: center;
+}
+.posts .addcomment .leftsidecomment i{
+    font-size: 20px;
+    margin-right: 15px;
+}
+.posts .addcomment .leftsidecomment input{
+    border: none;
+    outline: none;
+}
+
+
+.right{
+    width: 35%;
+    margin-top: 15px;
+    position: fixed;
+    right: 20px;
+    /* background-color: rgb(91, 81, 68); */
+}
+
+.right .profiletitle{
+    display: flex;
+    align-items: center;
+}
+.right .profileright p{
+    color: rgb(42,166,247);
+}
+.right .profileright p:hover{
+   cursor: pointer;
+}
+
+.right .profiletitle .profileleft{
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.right .profiletitle .profileleft .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.right .profiletitle .profileleft .details .name{
+    padding-bottom: 3px;
+}
+
+.suggestions{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.suggestions p{
+    margin-right: 75px;
+}
+.suggestions p:last-child{
+    margin-right: 0;
+}
+
+.suggestiontitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.suggestiontitle .suggestionleft{
+    display: flex;
+    margin-right: 80px;
+    align-items: center;
+}
+
+.suggestiontitle .suggestionleft .image img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.suggestiontitle .suggestionleft .details .name{
+    padding-bottom: 3px;
+    align-items: center;
+}
+
+.suggestiontitle .suggestionright p{
+    color: rgb(42,166,247);
+}
+.suggestiontitle .suggestionright p:hover{
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (max-width:1000px){
+    header{
+        padding: 10px 20px;
+    }
+
+    section .left{
+        width:100%;
+    }
+    section .right{
+        display: none;
+    }
+}
+
+@media (max-width:780px){
+    header .searchbar{
+        display:none
+    }
+    section{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width:580px){
+    .story .stories{
+        width: 25%;
+    }
+    .story{
+        overflow: scroll;
+    }
+
+    header nav ul li{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:395px){
+    header nav ul li{
+        margin-right: 3px;
+    }
+}
